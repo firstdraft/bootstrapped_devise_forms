@@ -6,4 +6,4 @@ To customize how Devise sign-up, edit profile, and sign-in forms look, you run t
 
 which creates a folder in `app/views` called `devise` and extracts all the view templates that Devise uses out of the gem in to it. That way you can customize them to your heart's content.
 
-However, I have prepared simple, Bootstrapped templates for each; feel free to steal them.
+However, I have prepared simple, Bootstrapped templates for each; feel free to steal them. Just replace the files you just generated with the ones in this repo, or copy the code in to each one.
