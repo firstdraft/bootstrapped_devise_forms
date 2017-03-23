@@ -1,4 +1,4 @@
-<div class="row m-t-3">
+<div class="row mt-3">
   <div class="col-lg-8 offset-lg-2">
     <div class="card">
       <h1 class="card-header h4">
@@ -10,13 +10,13 @@
           <%= f.hidden_field :reset_password_token %>
 
           <div class="form-group row <%= "has-danger" if resource.errors.include?(:email) %>">
-            <%= f.label :password, "New password", class: "col-sm-2 control-label" %>
+            <%= f.label :password, "New password", class: "col-sm-2 form-control-label" %>
             <div class="col-sm-10">
               <%= f.password_field :password, class: "form-control" %>
 
               <% if resource.errors.include?(:password) %>
                 <% resource.errors.full_messages_for(:password).each do |message| %>
-                  <p class="text-danger m-t-1 m-b-0">
+                  <p class="text-danger mt-1 mb-0">
                     <%= message %>
                   </p>
                 <% end %>
@@ -25,13 +25,13 @@
           </div>
 
           <div class="form-group row <%= "has-danger" if resource.errors.include?(:password_confirmation) %>">
-            <%= f.label :password_confirmation, "Confirm new password", class: "col-sm-2 control-label" %>
+            <%= f.label :password_confirmation, "Confirm new password", class: "col-sm-2 form-control-label" %>
             <div class="col-sm-10">
               <%= f.password_field :password_confirmation, class: "form-control" %>
 
               <% if resource.errors.include?(:password_confirmation) %>
                 <% resource.errors.full_messages_for(:password_confirmation).each do |message| %>
-                  <p class="text-danger m-t-1 m-b-0">
+                  <p class="text-danger mt-1 mb-0">
                     <%= message %>
                   </p>
                 <% end %>
@@ -46,7 +46,7 @@
           </div>
 
           <div class="form-group row">
-            <div class="col-sm-10 col-sm-offset-2">
+            <div class="col-sm-10 offset-sm-2">
               <%= render "devise/shared/links" %>
             </div>
           </div>
